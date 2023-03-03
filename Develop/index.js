@@ -15,11 +15,7 @@ const questions = [
     name: 'description',
     message: 'What do you want in your description?'
   },
-  {
-    type: 'input',
-    name: 'table',
-    message: 'Table of contents?'
-  },
+  
   {
     type: 'input',
     name: 'instructions',
@@ -28,13 +24,7 @@ const questions = [
   {
     type: 'input',
     name: 'usage',
-    message: ' What is this project used for?'
-  },
-  {
-    // Need to find licenses to add to list of choices
-    type: 'list',
-    name: 'license',
-    message: 'What license are you using?'
+    message: 'What is this project used for?'
   },
   {
     type: 'input',
@@ -47,9 +37,21 @@ const questions = [
     message: 'What kind of tests did you perform?'
   },
   {
+    // Need to find licenses/badge to add to list of choices
+    type: 'list',
+    name: 'license',
+    message: 'What license are you using?',
+    choices: ['None', 'MIT']
+  },
+  {
     type: 'input',
-    name: 'contact',
-    message: 'How do I contact you for additional questions'
+    name: 'username',
+    message: 'What is your GitHub username?'
+  } ,
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?'
   }
 ];
 
@@ -57,7 +59,10 @@ const questions = [
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() { 
+  inquirer
+  .prompt(questions)
+}
 
 // Function call to initialize app
 init();
