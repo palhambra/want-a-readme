@@ -11,4 +11,4 @@ Please have node installed onto your machine
 - Install inquirer by typing in "npm i inquirer@8.2.4"
 - After you have successfully completed the steps, type "node index.js" and you will be prompted with the questions
 
-[https://drive.google.com/file/d/1E8Y9IHTbWcsQQCbOpOevehECd2M15Evr/view](!Link to video demonstration)
+https://drive.google.com/file/d/1E8Y9IHTbWcsQQCbOpOevehECd2M15Evr/view
